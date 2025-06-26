@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 const App = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
     if (darkMode) {
@@ -28,10 +28,13 @@ const App = () => {
       <motion.section className="p-8" id="about" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
         <h2 className="text-2xl font-semibold mb-4">About Me</h2>
         <p className="text-lg max-w-3xl mx-auto">
-          I am an experienced Application SME with 6+ years in the IT industry,
-          currently working at Infosys, managing 9+ applications. My background includes
-          .NET, React, SQL, Azure, and more. Previously worked at Wipro with strong
-          experience in Citrix and VMware.
+        I am experienced Application SME and Consultant with 6.7+ years of expertise in <b>Production 
+Support, Application Management, and Infrastructure Operations </b> across .NET, IIS, Windows 
+Server, SQL Server, and Enterprise Applications. 
+Skilled in 
+Certificate Management, Windows Clustering and ITSM processes. 
+Looking to leverage my expertise in a challenging Production Support / Application Support / 
+Site Reliability Engineering role.
         </p>
       </motion.section>
 
@@ -39,11 +42,14 @@ const App = () => {
         <h2 className="text-2xl font-semibold mb-4">Skills</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
           <span className="bg-blue-100 dark:bg-blue-900 px-3 py-1 rounded">React.js</span>
-          <span className="bg-blue-100 dark:bg-blue-900 px-3 py-1 rounded">.NET</span>
-          <span className="bg-blue-100 dark:bg-blue-900 px-3 py-1 rounded">SQL Server</span>
-          <span className="bg-blue-100 dark:bg-blue-900 px-3 py-1 rounded">Azure</span>
-          <span className="bg-blue-100 dark:bg-blue-900 px-3 py-1 rounded">ServiceNow</span>
+          <span className="bg-blue-100 dark:bg-blue-900 px-3 py-1 rounded">.NET, PHP</span>
+          <span className="bg-blue-100 dark:bg-blue-900 px-3 py-1 rounded">MySQL, SQL Server</span>
+          <span className="bg-blue-100 dark:bg-blue-900 px-3 py-1 rounded">MS Azure</span>
+          <span className="bg-blue-100 dark:bg-blue-900 px-3 py-1 rounded">ServiceNow ITIL</span>
           <span className="bg-blue-100 dark:bg-blue-900 px-3 py-1 rounded">Tailwind CSS</span>
+          <span className="bg-blue-100 dark:bg-blue-900 px-3 py-1 rounded">Windows Server</span>
+          <span className="bg-blue-100 dark:bg-blue-900 px-3 py-1 rounded">Splunk/NewRelic</span>
+          <span className="bg-blue-100 dark:bg-blue-900 px-3 py-1 rounded">Application Support</span>
         </div>
       </motion.section>
 
@@ -56,12 +62,29 @@ const App = () => {
               Managing 9+ applications, handling production support, access audits, patching,
               SSL cert management, and Azure environments.
             </p>
+            <p>
+            Build, install, configure, and manage Windows Server and Cloud infrastructure to support 
+business-critical applications. <p>
+Administer Microsoft SQL Server environments, ensuring database performance, security, 
+and availability. </p><p>
+Oversee Microsoft IIS installation, configuration, and ongoing management to support 
+web applications. </p><p>
+Serve as an infrastructure expert bridging development and operations teams to facilitate 
+seamless application deployments. </p>
+            </p>
           </div>
           <div>
             <h3 className="text-lg font-bold">Wipro (Sr. System Engineer) – 4.3 Years</h3>
             <p>
               Worked as Citrix/VMware admin in a global support team. Resolved critical issues,
-              maintained VDI infrastructure, and ensured uptime.
+              maintained VDI infrastructure, and ensured uptime.<p>
+              Implemented Change requests for Certificate renewals of Web servers. 
+Managed incident resolution using ITIL best practices, ensuring timely resolution within 
+SLAs.   </p><p>
+Developed and maintained monitoring alerts and dashboards to ensure system 
+reliability.   </p><p>
+Conducted root cause analysis to prevent recurring issues and improve operational 
+performance.  </p>
             </p>
           </div>
         </div>
@@ -77,9 +100,9 @@ const App = () => {
 
       <motion.section className="p-8 bg-white dark:bg-gray-800" id="contact" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
         <h2 className="text-2xl font-semibold mb-4">Contact</h2>
-        <p className="text-lg">Email: ritesh.v@email.com</p>
-        <p className="text-lg">LinkedIn: linkedin.com/in/ritesh-v</p>
-        <p className="text-lg">GitHub: github.com/riteshvishwakarma</p>
+        <p className="text-lg">Email: riteshvishwakarma588@email.com</p>
+        <p className="text-lg">LinkedIn: www.linkedin.com/in/ritesh-vishwakarma-5187b120b</p>
+        <p className="text-lg">GitHub: github.com/Ritesh2202</p>
         <a
           href="/Ritesh_Vishwakarma_Resume.pdf"
           className="inline-block mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
