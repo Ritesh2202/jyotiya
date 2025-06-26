@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import profilePic from '././assets/ritesh-profile.jpeg';
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(true);
@@ -15,6 +16,11 @@ const App = () => {
   return (
     <div className="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100 font-sans transition-colors">
       <header className="bg-blue-800 dark:bg-blue-900 text-white p-6 text-center shadow-md flex flex-col items-center">
+      <img
+        src={profilePic}
+        alt="Ritesh Vishwakarma"
+        className="w-40 h-40 md:w-52 md:h-52 rounded-full object-cover shadow-lg border-4 border-blue-500"
+      />
         <h1 className="text-4xl font-bold">Ritesh Vishwakarma</h1>
         <p className="text-xl">Application SME | Web Developer | Azure Certified</p>
         <button
